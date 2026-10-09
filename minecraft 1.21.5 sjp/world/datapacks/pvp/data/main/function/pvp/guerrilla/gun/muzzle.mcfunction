@@ -3,8 +3,7 @@ $scoreboard players set #mz GuCalc $(muzzle_fx)
 #本人：右下に火花と小さな炎（視界の中央にはかからない）
 execute anchored eyes positioned ^-0.35 ^-0.3 ^1.1 run particle minecraft:small_flame ~ ~ ~ 0.03 0.03 0.03 0.01 4 force @a
 execute anchored eyes positioned ^-0.35 ^-0.3 ^1.1 run particle minecraft:electric_spark ~ ~ ~ 0.03 0.03 0.03 0.08 4 force @a
-#周り：銃口の閃光・炎・煙（本人には表示しない）
-execute if score #mz GuCalc matches 1 anchored eyes positioned ^-0.35 ^-0.3 ^1.1 run particle minecraft:flash ~ ~ ~ 0 0 0 0 1 force @a[tag=!GuShooter]
+#周り：銃口の炎・煙（本人には表示しない。閃光はなし）
 execute anchored eyes positioned ^-0.35 ^-0.3 ^1.2 run particle minecraft:flame ~ ~ ~ 0.06 0.06 0.06 0.04 6 force @a[tag=!GuShooter]
 execute anchored eyes positioned ^-0.35 ^-0.3 ^1.1 run particle minecraft:smoke ~ ~ ~ 0.08 0.05 0.08 0.02 4 force @a[tag=!GuShooter]
 #薬莢：右側にこぼれ落ちる（全員）

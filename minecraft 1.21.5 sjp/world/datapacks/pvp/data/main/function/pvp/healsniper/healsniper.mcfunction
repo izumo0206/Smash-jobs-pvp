@@ -21,5 +21,3 @@ execute as @e[type=item,tag=!HsChk] run function main:pvp/healsniper/item/scan
 scoreboard players add #slow HsCalc 1
 execute if score #slow HsCalc matches 20.. run function main:pvp/healsniper/slow
 
-#カメラの揺れなしダメージの反映（silent_damage）
-function main:pvp/silent_damage/tick

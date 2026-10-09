@@ -1,8 +1,13 @@
-#大規模爆風爆弾：演出のみ（ダメージは仕様未定のため未実装）
+#大規模爆風爆弾：カウントダウンの後、着弾で敵チームのプレイヤーが全員倒れる
 execute if score #nuke GuCalc matches 1.. run return run tellraw @s {text:"大規模爆風爆弾はすでに発動中です",color:"red"}
 item replace entity @s weapon.mainhand with minecraft:air
 #200tickのカウントダウン + 100tickの爆発演出
 scoreboard players set #nuke GuCalc 300
+#発動した人（倒した記録用）とチームを記録
+scoreboard players operation #nukeId GuCalc = @s GuID
+scoreboard players set #nukeTeam GuCalc 0
+execute if entity @s[team=Blue] run scoreboard players set #nukeTeam GuCalc 1
+execute if entity @s[team=Red] run scoreboard players set #nukeTeam GuCalc 2
 bossbar remove main:gu_nuke
 bossbar add main:gu_nuke {text:"大規模爆風爆弾",color:"dark_red",bold:true}
 bossbar set main:gu_nuke color red

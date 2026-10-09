@@ -15,4 +15,4 @@ execute if score #maxd GuCalc matches 1.. run function main:pvp/guerrilla/gun/ca
 execute unless score #skip GuCalc matches 1 run function main:pvp/guerrilla/gun/damage with storage main:guerrilla hit
 #命中音（1回の射撃につき1回）と血
 execute unless score #hitsnd GuCalc matches 1 run function main:pvp/guerrilla/gun/hit_sound with storage main:guerrilla param.common
-function main:pvp/guerrilla/fx/blood with storage main:guerrilla param.common
+function main:pvp/guerrilla/fx/blood with storage main:guerrilla shot

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "main:gu_nuke",
     "main:gu_explosion"
   ]
 }

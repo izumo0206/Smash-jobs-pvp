@@ -21,7 +21,7 @@ data modify storage main:healsniper param.dart set value {range:10,speed:2.5,cd:
 data modify storage main:healsniper param.nano set value {kills:1,range:40,aim:2.5,sec:10,scale:1.0,reach:1.0,speed_lv:1,strength_lv:1,regen_lv:2}
 
 #共通：hs_radius ヘッドショット判定の半径  trail_from / trail_size 弾の表示（開始距離・大きさ）  blood 血の量
-data modify storage main:healsniper param.common set value {hs_radius:0.45,trail_from:3,trail_size:0.5,blood:8}
+data modify storage main:healsniper param.common set value {hs_radius:0.45,trail_from:3,trail_size:0.5,blood:12}
 
 #内部で使う定数（変更不要）
 function main:pvp/silent_damage/setup

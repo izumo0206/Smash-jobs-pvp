@@ -6,4 +6,3 @@ execute as @a[scores={HsNano=1..}] run function main:pvp/healsniper/nano/end
 scoreboard players set @a HsHeal 0
 tag @a remove HsNanoTarget
 tag @a remove HsNanoUser
-function main:pvp/silent_damage/clear

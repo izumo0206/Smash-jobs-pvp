@@ -13,4 +13,3 @@ execute as @e[type=item] if items entity @s contents *[minecraft:custom_data~{gu
 bossbar remove main:gu_nuke
 scoreboard players set #nuke GuCalc 0
 kill @e[type=marker,tag=GuDbgPos]
-function main:pvp/silent_damage/clear

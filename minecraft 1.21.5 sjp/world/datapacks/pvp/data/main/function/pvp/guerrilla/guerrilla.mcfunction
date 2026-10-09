@@ -31,5 +31,3 @@ execute if score #nuke GuCalc matches 1.. run function main:pvp/guerrilla/reward
 scoreboard players add #slow GuCalc 1
 execute if score #slow GuCalc matches 20.. run function main:pvp/guerrilla/slow
 
-#カメラの揺れなしダメージの反映（silent_damage）
-function main:pvp/silent_damage/tick

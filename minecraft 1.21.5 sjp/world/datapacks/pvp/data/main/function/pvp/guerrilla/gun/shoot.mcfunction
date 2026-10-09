@@ -8,7 +8,7 @@ function main:pvp/guerrilla/gun/spread
 $scoreboard players set #st GuCalc $(range)
 scoreboard players operation #st GuCalc *= #4 GuCalc
 execute store result storage main:guerrilla shot.steps int 1 run scoreboard players get #st GuCalc
-$data modify storage main:guerrilla shot merge value {dmg:$(dmg),hs:$(hs),pellets:$(pellets),far_dmg:$(far_dmg)}
+$data modify storage main:guerrilla shot merge value {dmg:$(dmg),hs:$(hs),pellets:$(pellets),far_dmg:$(far_dmg),blood:$(blood)}
 #距離減衰の開始距離（ブロック → 0.25ブロック刻みの歩数。0 なら減衰なし）
 $scoreboard players set #far GuCalc $(far)
 scoreboard players operation #far GuCalc *= #4 GuCalc

@@ -1,0 +1,72 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "text": "Magic King Wind Burst"
+  },
+  "effects": {
+    "minecraft:location_changed": [
+      {
+        "effect": {
+          "type": "minecraft:explode",
+          "block_interaction": "none",
+          "knockback_multiplier": {
+            "type": "minecraft:lookup",
+            "fallback": 7.5,
+            "values": [
+              1.5, 1.5, 1.5, 1.5, 1.5, 1.5,
+              2.0, 2.0, 2.0, 2.0, 2.0, 2.0,
+              2.5, 2.5, 2.5, 2.5, 2.5, 2.5,
+              3.0, 3.0, 3.0, 3.0, 3.0, 3.0,
+              3.5, 3.5, 3.5, 3.5, 3.5, 3.5,
+              4.0, 4.0, 4.0, 4.0, 4.0, 4.0,
+              4.5, 4.5, 4.5, 4.5, 4.5, 4.5,
+              5.0, 5.0, 5.0, 5.0, 5.0, 5.0,
+              5.5, 5.5, 5.5, 5.5, 5.5, 5.5,
+              6.0, 6.0, 6.0, 6.0, 6.0, 6.0,
+              6.5, 6.5, 6.5, 6.5, 6.5, 6.5,
+              7.0, 7.0, 7.0, 7.0, 7.0, 7.0,
+              7.5
+            ]
+          },
+          "large_particle": {
+            "type": "minecraft:gust_emitter_large"
+          },
+          "radius": {
+            "type": "minecraft:lookup",
+            "fallback": 17,
+            "values": [
+              8, 8, 8, 8, 8, 8, 8, 8,
+              9, 9, 9, 9, 9, 9, 9, 9,
+              10, 10, 10, 10, 10, 10, 10, 10,
+              11, 11, 11, 11, 11, 11, 11, 11,
+              12, 12, 12, 12, 12, 12, 12, 12,
+              13, 13, 13, 13, 13, 13, 13, 13,
+              14, 14, 14, 14, 14, 14, 14, 14,
+              15, 15, 15, 15, 15, 15, 15, 15,
+              16, 16, 16, 16, 16, 16, 16, 16,
+              17
+            ]
+          },
+          "small_particle": {
+            "type": "minecraft:gust_emitter_small"
+          },
+          "sound": "minecraft:entity.wind_charge.wind_burst"
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "max_level": 73,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "minecraft:stick",
+  "weight": 1
+}

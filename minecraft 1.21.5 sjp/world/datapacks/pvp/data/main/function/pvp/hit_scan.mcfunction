@@ -1,0 +1,2 @@
+execute if entity @e[type=player,distance=..1] run effect give @p minecraft:glowing 1 1
+execute unless entity @e[type=player,distance=..1] if entity @s[distance=..30] positioned ^ ^ ^1 if block ^ ^ ^ air run function main:pvp/hit_scan

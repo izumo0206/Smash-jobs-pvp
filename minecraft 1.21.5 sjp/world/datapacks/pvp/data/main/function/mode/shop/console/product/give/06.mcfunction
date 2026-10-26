@@ -1,0 +1,1 @@
+give @s minecraft:wooden_sword[attribute_modifiers=[{id:'main:shop_shadow_speed',type:'minecraft:movement_speed',amount:0.01,operation:'add_value',slot:'offhand'},{id:'main:shop_shadow_attack_speed',type:'minecraft:attack_speed',amount:0.1,operation:'add_value',slot:'offhand'}],custom_name={text:'影刃',color:'dark_purple',italic:0b}] 1

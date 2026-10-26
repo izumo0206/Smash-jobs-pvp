@@ -1,0 +1,2 @@
+#パイレーツ
+item replace entity @a[tag=Heretic] container.0 with minecraft:trident[attribute_modifiers=[{"type":"attack_damage","amount":3,"operation":"add_value","slot":"mainhand","id":"2"},{"type":"entity_interaction_range","amount":1,"operation":"add_value","slot":"mainhand","id":"2"},{"type":"attack_speed","amount":1,"operation":"add_value","slot":"mainhand","id":"2"}],custom_name="嘆きの福音",enchantment_glint_override=true,enchantments={"sharpness":4},lore=["この世は涙、嗚咽の海"],unbreakable={}]

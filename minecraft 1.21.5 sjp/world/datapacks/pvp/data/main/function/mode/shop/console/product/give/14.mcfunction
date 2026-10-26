@@ -1,0 +1,1 @@
+give @s minecraft:echo_shard[custom_name={text:'重力の魔石',color:'dark_purple',italic:0b},lore=[{text:'左手: 周囲4マスの敵をジャンプ不能にする',color:'gray',italic:0b}],custom_data={shop_gravity:1b},enchantment_glint_override=1b] 1

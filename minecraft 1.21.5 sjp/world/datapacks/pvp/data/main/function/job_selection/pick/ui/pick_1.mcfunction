@@ -1,0 +1,1 @@
+$bossbar set main:pick name [{"text":"$(task)｜","color":"white"},{"selector":"@a[tag=PickSlot1,limit=1]"},{"text":"：$(slot1_job)｜残り "},{"score":{"name":"#seconds","objective":"PickCtrl"}},{"text":"秒"}]

@@ -1,0 +1,1 @@
+give @s minecraft:golden_sword[custom_name={text:'天翔の剣',color:'gold',italic:0b},lore=[{text:'右手: 浮遊VII・落下ダメージ無効',color:'gray',italic:0b},{text:'左手: 浮遊を即時解除・落下ダメージ無効',color:'gray',italic:0b}],custom_data={shop_sky_sword:1b},enchantment_glint_override=1b] 1

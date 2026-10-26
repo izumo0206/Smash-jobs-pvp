@@ -1,0 +1,1 @@
+give @s minecraft:warped_fungus_on_a_stick[custom_name={text:'ブリンク',color:'aqua',italic:0b},lore=[{text:'右クリック: 前方5マスへワープ',color:'gray',italic:0b}],custom_data={shop_blink:1b},unbreakable={},enchantment_glint_override=1b] 3

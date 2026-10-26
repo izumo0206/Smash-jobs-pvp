@@ -1,0 +1,1 @@
+$bossbar set main:pick name [{"text":"$(task)｜選択済み 0/","color":"white"},{"score":{"name":"#need","objective":"PickCtrl"}},{"text":"｜残り "},{"score":{"name":"#seconds","objective":"PickCtrl"}},{"text":"秒"}]

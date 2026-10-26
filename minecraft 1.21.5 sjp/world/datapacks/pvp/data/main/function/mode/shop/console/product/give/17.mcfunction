@@ -1,0 +1,1 @@
+give @s minecraft:leather_helmet[attribute_modifiers=[{id:'main:shop_small_armor',type:'minecraft:armor',amount:1,operation:'add_value',slot:'head'},{id:'main:shop_small_scale',type:'minecraft:scale',amount:-0.1,operation:'add_multiplied_base',slot:'head'}],custom_name={text:'小人の帽子',color:'green',italic:0b}] 1

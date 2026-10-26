@@ -1,0 +1,1 @@
+$execute if score @s JobPlay_$(JobName) matches 1.. run tellraw @s [{"text":"$(JobName): ","color":"aqua"},{"score":{"name":"@s","objective":"JobWin_$(JobName)"},"color":"white"},{"text":" / ","color":"gray"},{"score":{"name":"@s","objective":"JobPlay_$(JobName)"},"color":"white"}]

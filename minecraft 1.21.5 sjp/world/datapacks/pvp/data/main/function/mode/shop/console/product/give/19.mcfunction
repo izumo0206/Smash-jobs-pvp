@@ -1,0 +1,1 @@
+give @s minecraft:leather_boots[attribute_modifiers=[{id:'main:shop_climber_armor',type:'minecraft:armor',amount:1,operation:'add_value',slot:'feet'},{id:'main:shop_climber_step',type:'minecraft:step_height',amount:0.4,operation:'add_value',slot:'feet'}],custom_name={text:'登山家の靴',color:'dark_green',italic:0b}] 1

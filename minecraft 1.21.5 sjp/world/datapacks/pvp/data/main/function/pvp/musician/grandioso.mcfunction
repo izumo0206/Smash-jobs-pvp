@@ -1,0 +1,12 @@
+#グランディオーソ
+
+#タグ付け
+execute as @a[tag=Musician] run tag @s add Grandioso
+execute as @a[tag=Musician] run tag @s remove Dolce
+execute as @a[tag=Musician] run tag @s remove Vivace
+
+#CDセット
+scoreboard players add @a[tag=Musician] musicianCD 100
+scoreboard players set @a[tag=Musician] Vivace 0
+scoreboard players set @a[tag=Musician] Dolce 0
+scoreboard players set @a[tag=Musician] Grandioso 0

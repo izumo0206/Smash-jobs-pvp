@@ -1,0 +1,6 @@
+item replace entity @s container.0 with minecraft:brush[minecraft:item_model="sjp:magic_brush",custom_name={text:'筆',color:'dark_aqua',italic:0b},lore=[{text:'右クリック長押し：地面へ描画',color:'gray',italic:0b},{text:'Q：インクを投擲',color:'dark_gray',italic:0b}],custom_data={dusk_brush:1b},unbreakable={}]
+item replace entity @s container.1 with minecraft:cyan_dye[custom_name={text:'絵の具：砦',color:'dark_aqua',italic:0b},lore=[{text:'Qで絵画を選択',color:'gray',italic:0b}],custom_data={dusk_paint:'fortress'}]
+item replace entity @s container.2 with minecraft:white_dye[custom_name={text:'絵の具：子兎',color:'white',italic:0b},lore=[{text:'Qで絵画を選択',color:'gray',italic:0b}],custom_data={dusk_paint:'rabbit'}]
+item replace entity @s container.3 with minecraft:light_blue_dye[custom_name={text:'絵の具：子自在',color:'aqua',italic:0b},lore=[{text:'Qで絵画を選択',color:'gray',italic:0b}],custom_data={dusk_paint:'soldiers'}]
+item replace entity @s container.4 with minecraft:light_gray_dye[custom_name={text:'絵の具：石柱',color:'gray',italic:0b},lore=[{text:'Qで絵画を選択',color:'gray',italic:0b}],custom_data={dusk_paint:'pillar'}]
+item replace entity @s container.5 with minecraft:lime_dye[custom_name={text:'絵の具：長城壁',color:'green',italic:0b},lore=[{text:'Qで絵画を選択',color:'gray',italic:0b}],custom_data={dusk_paint:'wall'}]

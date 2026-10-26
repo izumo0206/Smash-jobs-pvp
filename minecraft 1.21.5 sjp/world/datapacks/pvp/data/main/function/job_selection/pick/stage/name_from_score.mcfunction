@@ -1,0 +1,7 @@
+execute if score ステージ決め StageSetting matches 1 run data modify storage main:pick ui.stage set value "バインド"
+execute if score ステージ決め StageSetting matches 2 run data modify storage main:pick ui.stage set value "闘技場"
+execute if score ステージ決め StageSetting matches 3 run data modify storage main:pick ui.stage set value "ちゅらうみ"
+execute if score ステージ決め StageSetting matches 4 run data modify storage main:pick ui.stage set value "立体交差"
+execute if score ステージ決め StageSetting matches 5 run data modify storage main:pick ui.stage set value "高層ビル"
+execute if score ステージ決め StageSetting matches 6 run data modify storage main:pick ui.stage set value "デカライン高架下"
+execute if score ステージ決め StageSetting matches 7 run data modify storage main:pick ui.stage set value "SJP城"

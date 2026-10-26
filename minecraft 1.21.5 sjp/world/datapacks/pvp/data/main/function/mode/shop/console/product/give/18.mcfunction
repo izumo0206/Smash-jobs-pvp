@@ -1,0 +1,1 @@
+give @s minecraft:leather_boots[attribute_modifiers=[{id:'main:shop_swift_armor',type:'minecraft:armor',amount:1,operation:'add_value',slot:'feet'},{id:'main:shop_swift_speed',type:'minecraft:movement_speed',amount:0.05,operation:'add_value',slot:'feet'}],custom_name={text:'俊足',color:'aqua',italic:0b}] 1

@@ -1,0 +1,14 @@
+#味方（Blue）本人が@s
+execute at @s run kill @e[tag=WraithTarget_Blue_3,tag=WraithGate]
+tag @e[tag=WraithTarget_Blue_3] remove WraithTarget_Blue_3
+tag @s add WraithTarget_Blue_3
+
+damage @s 4 player_attack by @p[tag=Wraith,team=Blue,limit=1]
+
+execute at @s run playsound minecraft:entity.experience_orb.pickup master @a ~ ~ ~ 1 1
+execute at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 10
+
+scoreboard players set @p[tag=Wraith,team=Blue,limit=1] wraith_type_3 2
+scoreboard players set @p[tag=Wraith,team=Blue,limit=1] wraith_sneak_cd 20
+scoreboard players set @p[tag=Wraith,team=Blue,limit=1] sneak 0
+execute as @p[tag=Wraith,team=Blue,limit=1] run title @s actionbar {text:'[ 座標3 に味方を登録しました（4ダメージ） ]',color:'green'}

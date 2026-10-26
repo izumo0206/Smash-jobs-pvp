@@ -1,0 +1,1 @@
+execute as @e[tag=candidate_red] if score @s shep_serial < #min shep_serial run scoreboard players operation #min shep_serial = @s shep_serial

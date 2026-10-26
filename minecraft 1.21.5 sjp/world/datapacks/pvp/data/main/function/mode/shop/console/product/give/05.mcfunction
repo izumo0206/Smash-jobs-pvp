@@ -1,0 +1,1 @@
+give @s minecraft:turtle_helmet[attribute_modifiers=[{id:'main:shop_turtle_armor',type:'minecraft:armor',amount:0,operation:'add_value',slot:'head',display:{type:'hidden'}}],enchantments={projectile_protection:3},custom_name={text:'タートルメット',color:'dark_green',italic:0b}] 1

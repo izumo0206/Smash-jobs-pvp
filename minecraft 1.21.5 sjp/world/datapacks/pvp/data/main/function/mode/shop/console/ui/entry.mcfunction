@@ -1,0 +1,1 @@
+$tellraw @s [{text:'[購入]',color:'green',bold:1b,click_event:{action:'run_command',command:'/trigger ShopBuy set $(id)'},hover_event:{action:'show_text',value:{text:'$(detail)',color:'gray'}}},{text:' $(name) ×$(amount) ',color:'white'},{text:'$(price)コイン',color:'gold'}]

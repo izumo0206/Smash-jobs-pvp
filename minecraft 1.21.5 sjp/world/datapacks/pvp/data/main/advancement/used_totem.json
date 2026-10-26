@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "used_self_destruct_bomb": {
+      "trigger": "minecraft:used_totem",
+      "conditions": {
+        "item": {
+          "items": "minecraft:totem_of_undying",
+          "components": {
+            "minecraft:custom_name": "自爆用爆弾"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "main:used_totem"
+  }
+}

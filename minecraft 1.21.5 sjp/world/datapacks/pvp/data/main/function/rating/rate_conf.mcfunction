@@ -1,0 +1,2 @@
+execute as @a run tellraw @s ["",{"text": "レートポイント ", "color": "white"}]
+execute as @a run tellraw @a ["",  {"selector": "@s"}, {"text": ":" ,"color": "white"},{"score": {"objective": "rating", "name": "@s"}}]

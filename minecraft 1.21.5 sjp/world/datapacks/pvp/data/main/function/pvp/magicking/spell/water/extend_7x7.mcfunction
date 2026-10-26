@@ -1,0 +1,25 @@
+#縦7x7水壁の外周を追加
+execute rotated ~ 0 positioned ^-3 ^0 ^2 run function main:pvp/magicking/spell/water/summon_point
+execute rotated ~ 0 positioned ^3 ^0 ^2 run function main:pvp/magicking/spell/water/summon_point
+execute rotated ~ 0 positioned ^-3 ^1 ^2 run function main:pvp/magicking/spell/water/summon_point
+execute rotated ~ 0 positioned ^3 ^1 ^2 run function main:pvp/magicking/spell/water/summon_point
+execute rotated ~ 0 positioned ^-3 ^2 ^2 run function main:pvp/magicking/spell/water/summon_point
+execute rotated ~ 0 positioned ^3 ^2 ^2 run function main:pvp/magicking/spell/water/summon_point
+execute rotated ~ 0 positioned ^-3 ^3 ^2 run function main:pvp/magicking/spell/water/summon_point
+execute rotated ~ 0 positioned ^3 ^3 ^2 run function main:pvp/magicking/spell/water/summon_point
+execute rotated ~ 0 positioned ^-3 ^4 ^2 run function main:pvp/magicking/spell/water/summon_point
+execute rotated ~ 0 positioned ^3 ^4 ^2 run function main:pvp/magicking/spell/water/summon_point
+execute rotated ~ 0 positioned ^-3 ^5 ^2 run function main:pvp/magicking/spell/water/summon_point
+execute rotated ~ 0 positioned ^3 ^5 ^2 run function main:pvp/magicking/spell/water/summon_point
+execute rotated ~ 0 positioned ^-3 ^6 ^2 run function main:pvp/magicking/spell/water/summon_point
+execute rotated ~ 0 positioned ^3 ^6 ^2 run function main:pvp/magicking/spell/water/summon_point
+execute rotated ~ 0 positioned ^-2 ^5 ^2 run function main:pvp/magicking/spell/water/summon_point
+execute rotated ~ 0 positioned ^-2 ^6 ^2 run function main:pvp/magicking/spell/water/summon_point
+execute rotated ~ 0 positioned ^-1 ^5 ^2 run function main:pvp/magicking/spell/water/summon_point
+execute rotated ~ 0 positioned ^-1 ^6 ^2 run function main:pvp/magicking/spell/water/summon_point
+execute rotated ~ 0 positioned ^0 ^5 ^2 run function main:pvp/magicking/spell/water/summon_point
+execute rotated ~ 0 positioned ^0 ^6 ^2 run function main:pvp/magicking/spell/water/summon_point
+execute rotated ~ 0 positioned ^1 ^5 ^2 run function main:pvp/magicking/spell/water/summon_point
+execute rotated ~ 0 positioned ^1 ^6 ^2 run function main:pvp/magicking/spell/water/summon_point
+execute rotated ~ 0 positioned ^2 ^5 ^2 run function main:pvp/magicking/spell/water/summon_point
+execute rotated ~ 0 positioned ^2 ^6 ^2 run function main:pvp/magicking/spell/water/summon_point

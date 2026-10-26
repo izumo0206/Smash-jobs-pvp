@@ -1,0 +1,1 @@
+give @s minecraft:carrot_on_a_stick[custom_name={text:'チケット破壊装置',color:'dark_red',italic:0b},lore=[{text:'右クリックで相手チームのチケットを1減らす',color:'red',italic:0b},{text:'チケット有効時のみ使用可能',color:'gray',italic:0b}],custom_data={shop_ticket_device:1b},unbreakable={},enchantment_glint_override=1b] 1

@@ -1,0 +1,1 @@
+execute as @a[tag=Ruciano] run clear @a[tag=Ruciano] minecraft:iron_sword

@@ -1,0 +1,6 @@
+execute if score ステージ決め ShopSetting matches 2 run kill @e[tag=KousaDiaCooldownred]
+execute if score ステージ決め ShopSetting matches 2 run kill @e[tag=KousaDiaCooldownmid]
+execute if score ステージ決め ShopSetting matches 2 run kill @e[tag=KousaDiaCooldownblue]
+execute if score ステージ決め ShopSetting matches 2 run kill @e[tag=KousaDiablue]
+execute if score ステージ決め ShopSetting matches 2 run kill @e[tag=KousaDiamid]
+execute if score ステージ決め ShopSetting matches 2 run kill @e[tag=KousaDiared]

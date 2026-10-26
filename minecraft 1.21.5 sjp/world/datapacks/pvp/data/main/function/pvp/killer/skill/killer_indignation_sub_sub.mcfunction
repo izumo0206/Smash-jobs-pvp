@@ -1,0 +1,1 @@
+effect give @e[tag=Killer,scores={SelectStatus=2..3}] minecraft:slowness 3 5 false

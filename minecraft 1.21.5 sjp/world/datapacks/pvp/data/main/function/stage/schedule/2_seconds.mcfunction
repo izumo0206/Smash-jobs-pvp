@@ -1,0 +1,14 @@
+#残り2秒
+
+#赤残り2秒
+execute at @e[tag=AkaNoSuta-toTitenn] run fill ~-7 ~ ~ ~6 ~6 ~ minecraft:red_stained_glass_pane
+execute at @e[tag=AkaNoSuta-toTitenn] run fill ~-1 ~ ~ ~1 ~4 ~ minecraft:diamond_block destroy
+execute at @e[tag=AkaNoSuta-toTitenn] run fill ~-1 ~3 ~ ~ ~3 ~ minecraft:red_stained_glass_pane destroy
+execute at @e[tag=AkaNoSuta-toTitenn] run fill ~1 ~1 ~ ~ ~1 ~ minecraft:red_stained_glass_pane destroy
+
+
+#青残り2秒
+execute at @e[tag=AoNoSuta-toTitenn] run fill ~-5 ~ ~ ~5 ~6 ~ minecraft:blue_stained_glass_pane
+execute at @e[tag=AoNoSuta-toTitenn] run fill ~-1 ~ ~ ~1 ~4 ~ minecraft:diamond_block destroy
+execute at @e[tag=AoNoSuta-toTitenn] run fill ~1 ~3 ~ ~ ~3 ~ minecraft:blue_stained_glass_pane destroy
+execute at @e[tag=AoNoSuta-toTitenn] run fill ~-1 ~1 ~ ~ ~1 ~ minecraft:blue_stained_glass_pane destroy

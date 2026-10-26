@@ -1,0 +1,1 @@
+tellraw @a[tag=StageStartParticipant,team=Blue] [{"text":"青チーム：","color":"blue"},{"text":"[準備OK]","color":"green","bold":true,"click_event":{"action":"run_command","command":"/trigger StageReady set 1"}},{"text":"  チーム内の1人が押せば確認完了","color":"gray"}]

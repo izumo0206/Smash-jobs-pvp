@@ -1,0 +1,42 @@
+#ポセイドン
+
+#BAN
+execute at @e[tag=jobsentakuKun] run data merge block ~-1 ~1 ~ {front_text:{messages:["",{"text":"BAN"},"",""]}}
+
+execute if entity @a[tag=FirstBAN] run return run function main:job_selection/tag_reset2
+
+#タグ消し
+function main:job_selection/tag_reset2
+
+
+#暴発防止
+scoreboard players set @p sneak 0
+
+#タグ付け
+tag @p add Wizard
+tag @p add Poseidon
+
+#持ち物
+clear @p
+give @p minecraft:trident[attribute_modifiers=[{"type":"attack_damage","amount":3,"operation":"add_value","slot":"mainhand","id":"2"},{"type":"entity_interaction_range","amount":1,"operation":"add_value","slot":"mainhand","id":"2"},{"type":"attack_speed","amount":1,"operation":"add_value","slot":"mainhand","id":"2"}],custom_name="海鳴りの福音",enchantment_glint_override=true,enchantments={"sharpness":4},lore=["この世は哭、憤怒の海"],unbreakable={}]
+give @p minecraft:nether_star[custom_name="魔法の素",lore=["MPを回復させる"]]
+give @p minecraft:bread 64
+give @p written_book[minecraft:written_book_content={title:"魔法剣士の書",author:"クリックで呪文を選択",pages:[["クリックで呪文を選択",{"text":"\nスニークで詠唱開始"},{"text":"\n\nMP:マジックポイント\nCT:詠唱時間\nCD:クールダウン\n\n"},{"text":"火の魔法","color":"red","click_event":{"action":"change_page","page":2},"hover_event":{"action":"show_text","value":[{"text":"火球を敵に飛ばす"}]}},{"text":"\n炎の魔法","color":"dark_red","click_event":{"action":"change_page","page":3},"hover_event":{"action":"show_text","value":[{"text":"敵の周囲を燃やす"}]}},{"text":"\n氷の魔法","color":"aqua","click_event":{"action":"change_page","page":4},"hover_event":{"action":"show_text","value":[{"text":"敵を凍らせる"}]}},{"text":"\n爆発の魔法","color":"gold","click_event":{"action":"change_page","page":5},"hover_event":{"action":"show_text","value":[{"text":"爆発"}]}},{"text":"\n雷の魔法","color":"yellow","click_event":{"action":"change_page","page":6},"hover_event":{"action":"show_text","value":[{"text":"敵に雷を降らす"}]}},{"text":"\nパルプンテ","color":"black","click_event":{"action":"change_page","page":7},"hover_event":{"action":"show_text","value":[{"text":"何がおこるかはお楽しみ"}]}}],["",{"text":"aaaaaaaaaaaaaaaaaaa","obfuscated":true,"color":"red"},{"text":"\n\n火の魔法Ⅰ mp:20 ct:20 cd:20","underlined":true,"color":"red","click_event":{"action":"run_command","command":"/scoreboard players set @s SelectJum 1"},"hover_event":{"action":"show_text","value":[{"text":"クリックで火の魔法Ⅰを選択"}]}},{"text":"\n小火球を召喚する","color":"red"},{"text":"\n\n"},{"text":"火の魔法Ⅱ mp:100 ct:50 cd:100","underlined":true,"color":"red","click_event":{"action":"run_command","command":"/scoreboard players set @s SelectJum 11"},"hover_event":{"action":"show_text","value":[{"text":"クリックで火の魔法Ⅱを選択"}]}},{"text":"\n中火球を召喚する","color":"red"}],["",{"text":"aaaaaaaaaaaaaaaaaaa","obfuscated":true,"color":"dark_red"},{"text":"\n\n炎の魔法Ⅰ mp:30 ct:20 cd:30","underlined":true,"color":"dark_red","click_event":{"action":"run_command","command":"/scoreboard players set @s SelectJum 2"},"hover_event":{"action":"show_text","value":[{"text":"クリックで炎の魔法Ⅰを選択"}]}},{"text":"\n敵一人の周囲を燃やす","color":"dark_red"},{"text":"\n\n"},{"text":"炎の魔法Ⅱ mp:100 ct:200 cd:300","underlined":true,"color":"dark_red","click_event":{"action":"run_command","command":"/scoreboard players set @s SelectJum 12"},"hover_event":{"action":"show_text","value":[{"text":"クリックで炎の魔法Ⅱを選択"}]}},{"text":"\n敵複数人の周囲を燃やす","color":"dark_red"}],["",{"text":"aaaaaaaaaaaaaaaaaaa","obfuscated":true,"color":"aqua"},{"text":"\n\n氷の魔法Ⅰ mp:30 ct:20 cd:40","underlined":true,"color":"aqua","click_event":{"action":"run_command","command":"/scoreboard players set @s SelectJum 3"},"hover_event":{"action":"show_text","value":[{"text":"クリックで氷の魔法Ⅰを選択"}]}},{"text":"\n敵一人を凍らせる","color":"aqua"},{"text":"\n\n"},{"text":"氷の魔法Ⅱ mp:100 ct:50 cd:100","underlined":true,"color":"aqua","click_event":{"action":"run_command","command":"/scoreboard players set @s SelectJum 13"},"hover_event":{"action":"show_text","value":[{"text":"クリックで氷の魔法Ⅱを選択"}]}},{"text":"\n敵一人の周囲を凍らせる","color":"aqua"}],["",{"text":"aaaaaaaaaaaaaaaaaaa","obfuscated":true,"color":"gold"},{"text":"\n\n爆発の魔法Ⅰ mp:40 ct:5 cd:20","underlined":true,"color":"gold","click_event":{"action":"run_command","command":"/scoreboard players set @s SelectJum 4"},"hover_event":{"action":"show_text","value":[{"text":"クリックで爆発の魔法Ⅰを選択"}]}},{"text":"\n小規模な爆発","color":"gold"},{"text":"\n\n"},{"text":"爆発の魔法Ⅱ mp:140 ct:60 cd:100","underlined":true,"color":"gold","click_event":{"action":"run_command","command":"/scoreboard players set @s SelectJum 14"},"hover_event":{"action":"show_text","value":[{"text":"クリックで爆発の魔法Ⅱを選択"}]}},{"text":"\n中規模な爆発","color":"gold"}],["",{"text":"aaaaaaaaaaaaaaaaaaa","obfuscated":true,"color":"yellow"},{"text":"\n\n雷の魔法Ⅰ mp:30 ct:10 cd:40","underlined":true,"color":"yellow","click_event":{"action":"run_command","command":"/scoreboard players set @s SelectJum 5"},"hover_event":{"action":"show_text","value":[{"text":"クリックで雷の魔法Ⅰを選択"}]}},{"text":"\nランダムな敵一人に雷","color":"yellow"},{"text":"\n\n"},{"text":"雷の魔法Ⅱ mp:100 ct:100 cd:150","underlined":true,"color":"yellow","click_event":{"action":"run_command","command":"/scoreboard players set @s SelectJum 15"},"hover_event":{"action":"show_text","value":[{"text":"クリックで雷の魔法Ⅱを選択"}]}},{"text":"\nランダムな敵、複数人に雷","color":"yellow"}],["",{"text":"aaaaaaaaaaaaaaaaaaa\naaaaaaaaaaaaaaaaaaa\naaaaaaaaaaaaaaaaaaa\naaaaaaaaaaaaaaaaaaa","obfuscated":true,"color":"black"},{"text":"\n\nパルプンテ mp:100 ct:100 cd:300","underlined":true,"color":"black","click_event":{"action":"run_command","command":"/scoreboard players set @s SelectJum 6"},"hover_event":{"action":"show_text","value":[{"text":"クリックでパルプンテを選択"}]}},{"text":"\n何がおこるかはお楽しみ","color":"black"},{"text":"\n\n"},{"text":"aaaaaaaaaaaaaaaaaaa\naaaaaaaaaaaaaaaaaaa\naaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\naaaaaaaaaaaaaaaaaaa","obfuscated":true,"color":"black"}] ]}]
+
+
+give @p written_book[minecraft:written_book_content={title:"魔法剣士のスキルの書",author:"クリックでスキルを選択",pages:[["",{"text":"火の魔法Ⅰ","color":"red","click_event":{"action":"run_command","command":"/scoreboard players set @s SelectJum 1"},"hover_event":{"action":"show_text","value":[{"text":"小火球を召喚する"}]}},{"text":"\n火の魔法Ⅱ","color":"red","click_event":{"action":"run_command","command":"/scoreboard players set @s SelectJum 11"},"hover_event":{"action":"show_text","value":[{"text":"中火球を召喚する"}]}},{"text":"\n炎の魔法Ⅰ","color":"dark_red","click_event":{"action":"run_command","command":"/scoreboard players set @s SelectJum 2"},"hover_event":{"action":"show_text","value":[{"text":"敵一人の周囲を燃やす"}]}},{"text":"\n炎の魔法Ⅱ","color":"dark_red","click_event":{"action":"run_command","command":"/scoreboard players set @s SelectJum 12"},"hover_event":{"action":"show_text","value":[{"text":"敵全員の周囲を燃やす"}]}},{"text":"\n氷の魔法Ⅰ","color":"aqua","click_event":{"action":"run_command","command":"/scoreboard players set @s SelectJum 3"},"hover_event":{"action":"show_text","value":[{"text":"敵一人を凍らせる"}]}},{"text":"\n氷の魔法Ⅱ","color":"aqua","click_event":{"action":"run_command","command":"/scoreboard players set @s SelectJum 13"},"hover_event":{"action":"show_text","value":[{"text":"敵全員を凍らせる"}]}},{"text":"\n爆発の魔法Ⅰ","color":"gold","click_event":{"action":"run_command","command":"/scoreboard players set @s SelectJum 4"},"hover_event":{"action":"show_text","value":[{"text":"小規模な爆発"}]}},{"text":"\n爆発の魔法Ⅱ","color":"gold","click_event":{"action":"run_command","command":"/scoreboard players set @s SelectJum 14"},"hover_event":{"action":"show_text","value":[{"text":"中規模な爆発"}]}},{"text":"\n雷の魔法Ⅰ","color":"yellow","click_event":{"action":"run_command","command":"/scoreboard players set @s SelectJum 5"},"hover_event":{"action":"show_text","value":[{"text":"敵に雷を降らす"}]}},{"text":"\n雷の魔法Ⅱ","color":"yellow","click_event":{"action":"run_command","command":"/scoreboard players set @s SelectJum 15"},"hover_event":{"action":"show_text","value":[{"text":"敵に全体を降らす"}]}}]]}]
+
+scoreboard players set @p WizardMP 100
+scoreboard players set @p WizardCooldown 0
+
+#ステータス
+function main:job_selection/set/state_reset
+attribute @p minecraft:max_health base set 38
+attribute @p minecraft:attack_speed base set 1
+attribute @p minecraft:entity_interaction_range base set 2
+
+#ピック宣言
+title @a[tag=Standbypick] title ["",{"selector":"@p"},{"text":"：魔法剣士"}]
+
+#選択制限
+execute at @e[tag=jobsentakuKun] run data merge block ~-1 ~1 ~ {front_text:{messages:["",{"selector":"@p"},"",""]}}

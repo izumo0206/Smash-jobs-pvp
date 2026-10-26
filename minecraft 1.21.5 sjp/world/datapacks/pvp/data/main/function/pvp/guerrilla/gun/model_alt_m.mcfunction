@@ -1,0 +1,1 @@
+$item modify entity @s weapon.mainhand [{function:"minecraft:set_components",components:{"minecraft:item_model":"$(alt_model)","minecraft:dyed_color":$(alt_color)}},{function:"minecraft:set_custom_data",tag:{gu_alt:1b}}]

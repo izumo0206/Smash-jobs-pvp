@@ -1,0 +1,1 @@
+execute unless score 時間設定判定用 TimeValueSet matches 0 at @e[tag=KariokiTimeSetting] run data merge block ~ ~2 ~ {Text1:'{"text":"現在の"}',Text2:'{"text":"制限時間は"}',Text3:'[{"score":{"name":"時間(分)","objective":"time"}},{"text":"分"}]',Text4:'{"text":"に設定されています"}'}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "main:gu_nuke",
+    "main:gu_bullet",
+    "main:gu_pellet",
+    "main:hs_bullet"
+  ]
+}

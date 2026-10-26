@@ -1,0 +1,1 @@
+give @s minecraft:leather_boots[attribute_modifiers=[{id:'main:shop_sponge_armor',type:'minecraft:armor',amount:1,operation:'add_value',slot:'feet'},{id:'main:shop_sponge_fall',type:'minecraft:fall_damage_multiplier',amount:-1,operation:'add_value',slot:'feet'}],custom_name={text:'スポンジブーツ',color:'yellow',italic:0b}] 1
